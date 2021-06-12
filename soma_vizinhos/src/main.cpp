@@ -12,20 +12,26 @@ int main( void )
 {
     int num1, num2;
     int somaTotal=0;
-    
-    cin >> num1;
-    cin >> num2;
 
-    if(num2 >=0){
+    while(cin >> num1){
+      cin >> num2;
+
+      if(num2 >0){
         for(int i=num1; i<num2+num1; i++){
-        somaTotal += i;
+          somaTotal += i;
         }
-    }else{
+      }else if(num2 <0){
         for(int i=num1; i>num2+num1; i--){
-        somaTotal += i;
+          somaTotal += i;
         }
+      }else{
+        somaTotal = num1;
+      }
+    
+      cout << somaTotal;
+      cout << "\n";
+      somaTotal=0;
     }
-  
-    cout << somaTotal;
+
     return 0;
 }
