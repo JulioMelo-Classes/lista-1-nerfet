@@ -29,7 +29,7 @@ int main( void )
       }
     
       cout << somaTotal;
-      cout << "\n";
+      cout << endl;
       somaTotal=0;
     }
 
