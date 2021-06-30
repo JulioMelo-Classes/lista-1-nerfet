@@ -9,15 +9,17 @@
  *
  * @return A pair of indexes to the first smallest and last largest values.
  */
-
-std::pair<int,int> min_max( int V[], size_t n )
+/*
+vou considerar 90% uma vez que a lógica estava correta mas havia um erro no operador
+*/
+std::pair<int,int> min_max( int V[], std::size_t n )
 {
     // TODO: Adicione aqui sua solução.
     int min=0, max=0;
     int minPos=0, maxPos=0;
-    if(n=1){
+    if(n==1){ //um erro simples de teste estava =, deveria ser ==
         return std::make_pair(minPos, maxPos);
-    }else if(n=0){
+    }else if(n==0){
         minPos=-1;
         maxPos=-1;
         return std::make_pair(minPos, maxPos);

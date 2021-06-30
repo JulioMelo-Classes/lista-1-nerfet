@@ -12,7 +12,9 @@ using std::endl;
 using std::setprecision;
 
 // Se desejar, crie funções aqui, antes do main().
-
+/*
+ok
+*/
 int main(void)
 {
     int num;
